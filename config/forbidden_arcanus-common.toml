@@ -55,19 +55,6 @@
 		#Generate Petrified Roots? [default: true]
 		generate = false
 
-	[world_gen.dark_runestone]
-		#Maximum size of Dark Runestone veins [default: 3]
-		#Range: 0 ~ 100
-		max_vein_size = 3
-		#Maximum Dark Runestone veins per chunk [default: 2]
-		#Range: 1 ~ 100
-		count = 2
-		#Maximum height for Dark Runestone to generate [default: 8]
-		#Range: 1 ~ 256
-		max_height = 8
-		#Generate Dark Runestone? [default: true]
-		generate = true
-
 	[world_gen.arcane_crystal]
 		#Maximum size of Arcane Crystal Ore veins [default: 6]
 		#Range: 0 ~ 100
@@ -174,8 +161,6 @@
 		explode = true
 		#Should Stella Arcanum explosions deal Block Damage (if explosions enabled) [default: true]
 		block_damage = true
-		#Should Stella Arcanum only explode when mined with a wrong tool (if explosions enabled) [default: false]
-		only_explode_wrong_tool = false
 		#Radius of Stella Arcanum explosions (if explosions enabled) [default: 3]
 		#Range: 1 ~ 10
 		explosion_radius = 3
@@ -184,6 +169,11 @@
 		#Radius the Activated Runic Chiseled Polished Darkstone prevents Entities from spawning in (in Blocks) [default: 25]
 		#Range: 1 ~ 100
 		entity_spawn_blocking_radius = 25
+
+	[blocks.edelwood_ladder]
+		#How much speed is added to the player when using an Edelwood Ladder [default: 0.07
+		#Range: 0.0 ~ 10.0
+		speed = 0.07
 
 [enchantments]
 

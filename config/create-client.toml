@@ -35,9 +35,6 @@
 	#Display a tooltip when looking at overstressed components.
 	enableOverstressedTooltip = true
 	# 
-	#Use modern OpenGL features to drastically increase performance.
-	experimentalRendering = true
-	# 
 	#Offset the Create config button in the in-game menu by this many pixels on the X axis
 	#The sign (-/+) of this value determines what side of the row the button appears on (left/right)
 	#Range: > -2147483648
@@ -71,6 +68,9 @@
 		# 
 		#Slow down a ponder scene whenever there is text on screen.
 		comfyReading = false
+		# 
+		#Show additional info in the ponder view and reload scene scripts more frequently.
+		editingMode = false
 
 	# 
 	#Settings for the Goggle Overlay
@@ -117,4 +117,12 @@
 		#Choose 'NONE' to disable the Indicator altogether
 		#Allowed Values: TEXTURE, TRIANGLE, NONE
 		indicatorType = "TEXTURE"
+
+	# 
+	#Railway related settings
+	[client.trains]
+		# 
+		#How far away the Camera should zoom when seated on a train
+		#Range: 0.0 ~ 3.4028234663852886E38
+		mountedZoomMultiplier = 3.0
 

@@ -6,7 +6,7 @@
 	"Show 'Hold Shift for Details' Message" = true
 	#If TRUE, CoFH Items will always show full details (charge state, etc.) and will not require Shift to be held down.
 	"Always Show Item Details" = false
-	#If TRUE, Item descriptions will be added to their tooltips if possible.
+	#If TRUE, Items will be associated with various keywords which assist with searching in various menus such as JEI.
 	"Show Item Descriptions" = true
 	#If TRUE, Enchantment descriptions will be added to the tooltip for Enchanted Books containing only a single enchantment.
 	"Show Enchantment Descriptions" = true

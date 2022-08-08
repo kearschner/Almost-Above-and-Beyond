@@ -16,7 +16,7 @@ function opposite(face) {
 
 onEvent('entity.spawned', event => {
 	let entity = event.getEntity()
-	if (entity.getType() == "appliedenergistics2:singularity") {
+	if (entity.getType() == "ae2:singularity") {
 		let item = entity.getItem()
 		if (item == null)
 			return
@@ -47,7 +47,7 @@ onEvent('entity.spawned', event => {
 	entity.setZ(Math.floor(entity.getZ()) + .5)
 })
 
-onEvent('server.datapack.first', event => {
+/*onEvent('server.datapack.first', event => {
 
 	// "Fixes" Extended Caves wiping its config contents
 	let extcaves_conf = java("com.polyvalord.extcaves.config.Config")
@@ -65,9 +65,9 @@ onEvent('server.datapack.first', event => {
 	extcaves_conf.gen_mosses = no_thankyou
 	extcaves_conf.gen_rock_flints = no_thankyou
 
-})
+}) */
 
-onEvent('player.tick', event => {
+/*onEvent('player.tick', event => {
 
 	// Fixes advanced rocketry not applying low gravity on the moon
 	let player = event.getPlayer()
@@ -81,9 +81,9 @@ onEvent('player.tick', event => {
 	player.getPotionEffects().add(effects.field_204839_B, 20, 0, false, false) // slow fall
 	player.getPotionEffects().add(effects.field_76430_j, 20, 4, false, false) // jump boost
 
-})
+})*/
 
-onEvent('player.tick', event => {
+/*onEvent('player.tick', event => {
 
 	// Fixes advanced rocketry not descending their rocket
 	let player = event.getPlayer()
@@ -102,7 +102,7 @@ onEvent('player.tick', event => {
 		riding.setFullNBT(nbt)
 	}
 
-})
+})*/
 
 onEvent('block.place', event => {
 

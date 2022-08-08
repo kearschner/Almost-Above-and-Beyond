@@ -17,10 +17,10 @@
 					tic_multipliers: { }
 					tic_stats: {
 						"tconstruct:attack_speed": 1.2f
-						"tconstruct:mining_speed": 8.05f
-						"tconstruct:attack_damage": 2.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:durability": 683.0f
+						"tconstruct:mining_speed": 7.475f
+						"tconstruct:attack_damage": 2.25f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 721.0f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -41,15 +41,13 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
-						"tconstruct:tinkers_bronze"
+						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
 					Damage: 0
-					tic_volatile_data: {
-						"tconstruct:durability": 683
-					}
 					tic_persistent_data: {
 						abilities: 1
 						upgrades: 3
@@ -94,14 +92,14 @@
 				Count: 1b
 				tag: {
 					tic_multipliers: {
-						"tconstruct:attack_damage": 0.75f
+						"tconstruct:attack_damage": 0.5f
 					}
 					tic_stats: {
-						"tconstruct:attack_speed": 1.8f
-						"tconstruct:mining_speed": 8.05f
-						"tconstruct:attack_damage": 2.25f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:durability": 683.0f
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 7.475f
+						"tconstruct:attack_damage": 1.625f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 721.0f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -125,20 +123,14 @@
 							name: "tconstruct:harvest"
 							level: 1s
 						}
-						{
-							name: "tconstruct:hoe_transform_hidden"
-							level: 1s
-						}
 					]
+					HideFlags: 3
 					tic_materials: [
-						"tconstruct:tinkers_bronze"
+						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
 					Damage: 0
-					tic_volatile_data: {
-						"tconstruct:durability": 683
-					}
 					tic_persistent_data: {
 						abilities: 1
 						upgrades: 3
@@ -185,10 +177,10 @@
 					tic_multipliers: { }
 					tic_stats: {
 						"tconstruct:attack_speed": 0.9f
-						"tconstruct:mining_speed": 8.05f
-						"tconstruct:attack_damage": 8.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:durability": 683.0f
+						"tconstruct:mining_speed": 7.475f
+						"tconstruct:attack_damage": 8.25f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 721.0f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -205,19 +197,25 @@
 							level: 1s
 						}
 						{
-							name: "tconstruct:axe_transform_hidden"
+							name: "tconstruct:axe_strip"
+							level: 1s
+						}
+						{
+							name: "tconstruct:axe_scrape"
+							level: 1s
+						}
+						{
+							name: "tconstruct:axe_wax_off"
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
-						"tconstruct:tinkers_bronze"
+						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:electrum"
 					]
 					Damage: 0
-					tic_volatile_data: {
-						"tconstruct:durability": 683
-					}
 					tic_persistent_data: {
 						abilities: 1
 						upgrades: 3
@@ -308,10 +306,10 @@
 					}
 					tic_stats: {
 						"tconstruct:attack_speed": 0.75f
-						"tconstruct:mining_speed": 3.68f
-						"tconstruct:attack_damage": 6.4125f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:durability": 1792.0f
+						"tconstruct:mining_speed": 3.45f
+						"tconstruct:attack_damage": 6.58125f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 1868.0f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -331,21 +329,15 @@
 							name: "tconstruct:temperate"
 							level: 1s
 						}
-						{
-							name: "tconstruct:two_handed"
-							level: 1s
-						}
 					]
+					HideFlags: 3
 					tic_materials: [
 						"tconstruct:electrum"
 						"tconstruct:constantan"
-						"tconstruct:tinkers_bronze"
-						"tconstruct:tinkers_bronze"
+						"tconstruct:bronze"
+						"tconstruct:bronze"
 					]
 					Damage: 0
-					tic_volatile_data: {
-						"tconstruct:durability": 1792
-					}
 					tic_persistent_data: {
 						abilities: 1
 						upgrades: 2
@@ -395,10 +387,10 @@
 					}
 					tic_stats: {
 						"tconstruct:attack_speed": 1.6f
-						"tconstruct:mining_speed": 4.025f
-						"tconstruct:attack_damage": 5.0f
-						"tconstruct:harvest_level": 3.0f
-						"tconstruct:durability": 751.3f
+						"tconstruct:mining_speed": 3.7375f
+						"tconstruct:attack_damage": 5.25f
+						"tconstruct:harvest_tier": "minecraft:diamond"
+						"tconstruct:durability": 793.10004f
 					}
 					tic_broken: 0b
 					tic_modifiers: [
@@ -415,15 +407,13 @@
 							level: 1s
 						}
 					]
+					HideFlags: 3
 					tic_materials: [
-						"tconstruct:tinkers_bronze"
+						"tconstruct:bronze"
 						"tconstruct:constantan"
 						"tconstruct:constantan"
 					]
 					Damage: 0
-					tic_volatile_data: {
-						"tconstruct:durability": 751
-					}
 					tic_persistent_data: {
 						abilities: 1
 						upgrades: 3
@@ -707,7 +697,7 @@
 				{
 					id: "05FA6BA978E2C59F"
 					type: "item"
-					item: "appliedenergistics2:certus_quartz_crystal"
+					item: "ae2:certus_quartz_crystal"
 				}
 				{
 					id: "4DC845907E010B7E"
@@ -1139,7 +1129,7 @@
 				{
 					id: "77DF03F6422FE09D"
 					type: "item"
-					item: "xreliquary:rib_bone"
+					item: "reliquary:rib_bone"
 				}
 				{
 					id: "5B926A8BCD627407"

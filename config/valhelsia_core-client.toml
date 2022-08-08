@@ -8,4 +8,6 @@
 	active_cosmetic_hat = ""
 	#The active cosmetic for the category: hand
 	active_cosmetic_hand = ""
+	#The active cosmetic for the category: face
+	active_cosmetic_face = ""
 

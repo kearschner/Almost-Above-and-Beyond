@@ -455,105 +455,6 @@
 			]
 		}
 		{
-			title: "16x Weathered Limestone"
-			icon: "create:weathered_limestone"
-			disable_toast: true
-			x: 0.5d
-			y: 1.0d
-			shape: "hexagon"
-			subtitle: "3 Silver"
-			id: "3DDAE38C0982006F"
-			tasks: [{
-				id: "6F23A5303082EA48"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "5D564E6651601870"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_weathered_limestone"
-				}
-				{
-					id: "3F5C56A7B73209DE"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "16x Dolomite"
-			icon: "create:dolomite"
-			disable_toast: true
-			x: 1.5d
-			y: 1.0d
-			shape: "hexagon"
-			subtitle: "3 Silver"
-			id: "7004EC32689972BD"
-			tasks: [{
-				id: "0D04DAEF7A7BA4CE"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "245A6F167A95C24A"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_dolomite"
-				}
-				{
-					id: "512E8B8DC23D86DC"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "16x Gabbro"
-			icon: "create:gabbro"
-			disable_toast: true
-			x: 2.5d
-			y: 1.0d
-			shape: "hexagon"
-			subtitle: "3 Silver"
-			id: "650421069ADD5DF4"
-			tasks: [{
-				id: "2E5008B38BA20119"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "58A1D35232DCE4F3"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_gabbro"
-				}
-				{
-					id: "18DF69253AA7A081"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
 			title: "16x Scoria"
 			icon: "create:scoria"
 			disable_toast: true
@@ -578,39 +479,6 @@
 				}
 				{
 					id: "3D31B41848E11733"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "16x Dark Scoria"
-			icon: "create:dark_scoria"
-			disable_toast: true
-			x: -3.5d
-			y: 2.0d
-			shape: "hexagon"
-			subtitle: "3 Silver"
-			id: "043B5A961669A792"
-			tasks: [{
-				id: "74C8125C04D8A0F1"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "6FBADA6B12BD4415"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_dark_scoria"
-				}
-				{
-					id: "5A085B3722905C10"
 					type: "custom"
 					title: "Repeatable"
 					icon: "thermal:machine_cycle_augment"
@@ -1017,7 +885,7 @@
 		}
 		{
 			title: "8x Copper Ingot"
-			icon: "create:copper_ingot"
+			icon: "minecraft:copper_ingot"
 			disable_toast: true
 			x: -1.5d
 			y: 6.0d
@@ -1644,7 +1512,7 @@
 		}
 		{
 			title: "8x Certus Quartz"
-			icon: "appliedenergistics2:certus_quartz_crystal"
+			icon: "ae2:certus_quartz_crystal"
 			disable_toast: true
 			x: 1.5d
 			y: 8.0d
@@ -1677,7 +1545,7 @@
 		}
 		{
 			title: "8x Fluix Quartz"
-			icon: "appliedenergistics2:fluix_crystal"
+			icon: "ae2:fluix_crystal"
 			disable_toast: true
 			x: 2.5d
 			y: 8.0d
@@ -2063,39 +1931,6 @@
 				}
 				{
 					id: "5F776DF7288000AD"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "4x Mangrove Root"
-			icon: "biomesoplenty:mangrove_root"
-			disable_toast: true
-			x: 2.5d
-			y: 15.0d
-			shape: "hexagon"
-			subtitle: "9 Silver"
-			id: "2C01297688930D47"
-			tasks: [{
-				id: "2869F3D5537E102D"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "2A462F9CABD9AC8F"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_mangrove_root"
-				}
-				{
-					id: "797F76679CBA5B0B"
 					type: "custom"
 					title: "Repeatable"
 					icon: "thermal:machine_cycle_augment"
@@ -2534,72 +2369,6 @@
 			]
 		}
 		{
-			title: "16x Factory Block"
-			icon: "chisel:factory/dots"
-			disable_toast: true
-			x: -1.5d
-			y: 18.5d
-			shape: "hexagon"
-			subtitle: "2 Silver"
-			id: "480F70ECCC09621E"
-			tasks: [{
-				id: "21E5B3D779BB589C"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "74D39B3EBA32AD01"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_factory_block"
-				}
-				{
-					id: "7AB465AE19C3FDE2"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "16x Laboratory Block"
-			icon: "chisel:laboratory/wallpanel"
-			disable_toast: true
-			x: -0.5d
-			y: 18.5d
-			shape: "hexagon"
-			subtitle: "4 Silver"
-			id: "1ACB59D7A20671CE"
-			tasks: [{
-				id: "4C6466D4DD4B5E8A"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "60CCD17EF9446846"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_laboratory_block"
-				}
-				{
-					id: "0D1FF371759A1EFA"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
 			title: "16x Copper Shingles"
 			icon: "create:copper_shingles"
 			disable_toast: true
@@ -2690,39 +2459,6 @@
 				}
 				{
 					id: "397DC93DEF4B9C30"
-					type: "custom"
-					title: "Repeatable"
-					icon: "thermal:machine_cycle_augment"
-					tags: ["reset"]
-					auto: "no_toast"
-				}
-			]
-		}
-		{
-			title: "32x Architect's Limestone"
-			icon: "architects_palette:limestone"
-			disable_toast: true
-			x: 3.5d
-			y: 18.5d
-			shape: "hexagon"
-			subtitle: "8 Silver"
-			id: "0A32C5B097AA4F14"
-			tasks: [{
-				id: "247CD1CF9FA09A54"
-				type: "item"
-				icon: { id: "thermal:silver_coin", Count: 10b }
-				item: "thermal:silver_coin"
-				count: 10L
-			}]
-			rewards: [
-				{
-					id: "16B4A7C6E87E2E0C"
-					type: "item"
-					auto: "enabled"
-					item: "kubejs:trade_card_architects_limestone"
-				}
-				{
-					id: "6002CBA76AB901F3"
 					type: "custom"
 					title: "Repeatable"
 					icon: "thermal:machine_cycle_augment"
@@ -3558,7 +3294,7 @@
 		}
 		{
 			title: "1x Witch Hat"
-			icon: "xreliquary:witch_hat"
+			icon: "reliquary:witch_hat"
 			disable_toast: true
 			x: 3.5d
 			y: 23.0d
@@ -3591,7 +3327,7 @@
 		}
 		{
 			title: "1x Zombie heart"
-			icon: "xreliquary:zombie_heart"
+			icon: "reliquary:zombie_heart"
 			disable_toast: true
 			x: -3.5d
 			y: 24.0d
@@ -3624,7 +3360,7 @@
 		}
 		{
 			title: "1x Squid Beak"
-			icon: "xreliquary:squid_beak"
+			icon: "reliquary:squid_beak"
 			disable_toast: true
 			x: -2.5d
 			y: 24.0d
@@ -3657,7 +3393,7 @@
 		}
 		{
 			title: "1x Rib Bone"
-			icon: "xreliquary:rib_bone"
+			icon: "reliquary:rib_bone"
 			disable_toast: true
 			x: -1.5d
 			y: 24.0d
@@ -3690,7 +3426,7 @@
 		}
 		{
 			title: "1x Catalyzing Gland"
-			icon: "xreliquary:catalyzing_gland"
+			icon: "reliquary:catalyzing_gland"
 			disable_toast: true
 			x: -0.5d
 			y: 24.0d
@@ -3723,7 +3459,7 @@
 		}
 		{
 			title: "1x Chelicerae"
-			icon: "xreliquary:chelicerae"
+			icon: "reliquary:chelicerae"
 			disable_toast: true
 			x: 0.5d
 			y: 24.0d
@@ -3756,7 +3492,7 @@
 		}
 		{
 			title: "1x Slime Pearl"
-			icon: "xreliquary:slime_pearl"
+			icon: "reliquary:slime_pearl"
 			disable_toast: true
 			x: 1.5d
 			y: 24.0d
@@ -3789,7 +3525,7 @@
 		}
 		{
 			title: "1x Bat Wing"
-			icon: "xreliquary:bat_wing"
+			icon: "reliquary:bat_wing"
 			disable_toast: true
 			x: 2.5d
 			y: 24.0d
@@ -3822,7 +3558,7 @@
 		}
 		{
 			title: "1x Withered Rib"
-			icon: "xreliquary:withered_rib"
+			icon: "reliquary:withered_rib"
 			disable_toast: true
 			x: 3.5d
 			y: 24.0d
@@ -3855,7 +3591,7 @@
 		}
 		{
 			title: "1x Molten Core"
-			icon: "xreliquary:molten_core"
+			icon: "reliquary:molten_core"
 			disable_toast: true
 			x: -3.5d
 			y: 25.0d
@@ -3888,7 +3624,7 @@
 		}
 		{
 			title: "1x Eye of the Storm"
-			icon: "xreliquary:eye_of_the_storm"
+			icon: "reliquary:eye_of_the_storm"
 			disable_toast: true
 			x: -2.5d
 			y: 25.0d
@@ -3921,7 +3657,7 @@
 		}
 		{
 			title: "1x Frozen Core"
-			icon: "xreliquary:frozen_core"
+			icon: "reliquary:frozen_core"
 			disable_toast: true
 			x: -1.5d
 			y: 25.0d
@@ -3954,7 +3690,7 @@
 		}
 		{
 			title: "1x Nebulous Heart"
-			icon: "xreliquary:nebulous_heart"
+			icon: "reliquary:nebulous_heart"
 			disable_toast: true
 			x: -0.5d
 			y: 25.0d
@@ -3987,7 +3723,7 @@
 		}
 		{
 			title: "1x Guardian Spike"
-			icon: "xreliquary:guardian_spike"
+			icon: "reliquary:guardian_spike"
 			disable_toast: true
 			x: 0.5d
 			y: 25.0d

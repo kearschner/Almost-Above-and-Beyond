@@ -1,11 +1,8 @@
 
 [spawns]
-	#Overworld spawn chance
-	#Range: 0 ~ 50
+	#Spawn attempts per chunk
+	#Range: 0 ~ 200
 	spawn_attempts_per_chunk = 4
-	#End spawn chance
-	#Range: 0 ~ 50
-	end_spawn_attempts_per_chunk = 5
 
 [interactions]
 	#Chance for teleport action to be picked
@@ -45,4 +42,6 @@
 	#Loot mode: decides if it can drop everything except blacklist or only stuff on the whitelist
 	#Allowed Values: BLACKLIST, WHITELIST
 	loot_mode = "BLACKLIST"
+	#A way to blacklist entire mods from the loot pool. Enter a list of mod ids
+	mod_blacklist = ["chisel"]
 

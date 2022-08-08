@@ -35,168 +35,6 @@
 			}]
 		}
 		{
-			title: "We have lift off!"
-			icon: "advancedrocketry:guidancecomputer"
-			x: 2.0d
-			y: 7.75d
-			shape: "hexagon"
-			description: [
-				"With everything in place and the Matrices programmed, you can go ahead and assemble the Guidance Computer and add it to your Spaceship."
-				""
-				"Take a minute to craft a flag representing your space program to bring to the moon. You can apply patterns to it just like a Banner."
-				""
-				"In your own time, take a seat in your assembled rocket, and press Space."
-			]
-			dependencies: [
-				"6BA9A176EDA001A3"
-				"1AE7B6CA4D1DBA6F"
-				"462CE0A4C80442FB"
-				"69311E02A8B3451D"
-				"3AD7553F3C8593F9"
-				"4800892E1E70648D"
-				"25B76A897D97C9F1"
-				"73473DC7269EC5B0"
-			]
-			size: 2.0d
-			id: "47965C310D9847DC"
-			tasks: [
-				{
-					id: "05BDC7ACF64D13C2"
-					type: "item"
-					item: "advancedrocketry:guidancecomputer"
-					consume_items: false
-				}
-				{
-					id: "4418C7A289B17158"
-					type: "item"
-					title: "Any Flag"
-					icon: {
-						id: "supplementaries:flag_gray"
-						Count: 1b
-						tag: {
-							BlockEntityTag: {
-								Patterns: [
-									{
-										Pattern: "gra"
-										Color: 0
-									}
-									{
-										Pattern: "bo"
-										Color: 15
-									}
-									{
-										Pattern: "bs"
-										Color: 15
-									}
-									{
-										Pattern: "ts"
-										Color: 15
-									}
-									{
-										Pattern: "rs"
-										Color: 15
-									}
-									{
-										Pattern: "ls"
-										Color: 11
-									}
-								]
-							}
-						}
-					}
-					disable_toast: true
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "supplementaries:flag_orange"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_magenta"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_light_blue"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_lime"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_gray"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_cyan"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_green"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_red"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_white"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_light_gray"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_yellow"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_pink"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_purple"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_blue"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_brown"
-									Count: 1b
-								}
-								{
-									id: "supplementaries:flag_black"
-									Count: 1b
-								}
-							]
-						}
-					}
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "7F4FDBDE58C30C3A"
-				type: "item"
-				item: {
-					id: "desolation:charred_fence"
-					Count: 1b
-					tag: {
-						RepairCost: 0
-						display: {
-							Name: "{\"text\":\"Flag Pole\",\"italic\":false,\"color\":\"aqua\"}"
-						}
-					}
-				}
-				count: 3
-			}]
-		}
-		{
 			title: "Solving Trajectories"
 			x: 2.0d
 			y: 9.5d
@@ -209,7 +47,7 @@
 				""
 				"Each digit now has to be dissolved back into its liquified form via Smeltery. Once a Smeltery collected 10 liquified items of each digit, they combine into the encoded logic required for our Computer. Once enough of this figurative alloy has accumulated, it can be cast into the powerful Computation Matrix."
 				""
-				"The Guidance Computer requires 8 Matrices to function. Depending on your data centre and mechanism assembly lines, this may take a while."
+				"It doesn't have much use, but it looks real pretty."
 			]
 			dependencies: [
 				"42B5C0102B22F389"
@@ -229,7 +67,6 @@
 				id: "2C98415D43457049"
 				type: "item"
 				item: "kubejs:computation_matrix"
-				count: 8L
 				consume_items: false
 			}]
 		}
@@ -544,7 +381,7 @@
 		}
 		{
 			title: "Upcycle Bin"
-			icon: "appliedenergistics2:matter_ball"
+			icon: "ae2:matter_ball"
 			x: 2.0d
 			y: 3.0d
 			subtitle: "Contraption 47"
@@ -560,7 +397,7 @@
 				{
 					id: "245415CFAEFCA7ED"
 					type: "item"
-					item: "appliedenergistics2:matter_ball"
+					item: "ae2:matter_ball"
 					consume_items: false
 				}
 				{
@@ -575,7 +412,10 @@
 			x: 2.0d
 			y: 4.5d
 			shape: "circle"
-			description: ["Create bars of Matter Plastics in a Super-Heated Compacter. You'll need a couple of these."]
+			description: [
+				"Create bars of Matter Plastics in a Super-Heated Compacter. You'll need a couple of these."
+				"Unfortunatly, Matter Plastics don't matter :("
+			]
 			dependencies: [
 				"6F750A66D0A559DE"
 				"3CBED6B591BCEDEA"
@@ -657,7 +497,10 @@
 			y: 9.0d
 			shape: "circle"
 			subtitle: "Contraption 46"
-			description: ["Both Heavy and Light Oil can be further refined into suitable Rocket Fuel."]
+			description: [
+				"Both Heavy and Light Oil can be further refined into suitable Rocket Fuel."
+				"Unfortunatly, you don't have a rocket to put it in."
+			]
 			dependencies: [
 				"2BD76CB3F8BC215E"
 				"26DD1CA6A8D4E249"
@@ -686,171 +529,6 @@
 				item: "create:blaze_cake"
 				consume_items: false
 			}]
-		}
-		{
-			title: "Attire"
-			icon: "advancedrocketry:spacehelmet"
-			x: -1.0d
-			y: 6.0d
-			shape: "circle"
-			description: ["If you intend to survive past the landing, a special set of armour will be required."]
-			dependencies: ["6A156D11D983661D"]
-			id: "6BA9A176EDA001A3"
-			tasks: [
-				{
-					id: "7E45D4E589606928"
-					type: "item"
-					item: "advancedrocketry:spacehelmet"
-					consume_items: false
-				}
-				{
-					id: "00E67717F76ABA56"
-					type: "item"
-					item: "advancedrocketry:spacechest"
-					consume_items: false
-				}
-				{
-					id: "3D1FB475F19FB099"
-					type: "item"
-					item: "advancedrocketry:spaceleggings"
-					consume_items: false
-				}
-				{
-					id: "29F72399D75E555C"
-					type: "item"
-					item: "advancedrocketry:spaceboots"
-					consume_items: false
-				}
-			]
-		}
-		{
-			title: "Where to?"
-			x: 3.5d
-			y: 9.0d
-			shape: "circle"
-			description: ["In order for your Guidance Computer to know its Destination, a Planet Id Chip has to be inserted."]
-			hide_dependency_lines: true
-			dependencies: ["5D0454F977C4F080"]
-			id: "462CE0A4C80442FB"
-			tasks: [{
-				id: "4036EE2984EFEA1A"
-				type: "item"
-				item: {
-					id: "advancedrocketry:planet_id_chip"
-					Count: 1b
-					tag: {
-						dimId: "custommoon:moon"
-						DimensionName: " The Moon "
-					}
-				}
-				consume_items: false
-			}]
-		}
-		{
-			title: "Electrolysis"
-			icon: "advancedrocketry:oxygencharger"
-			x: 0.5d
-			y: 6.0d
-			shape: "circle"
-			subtitle: "Contraption 48"
-			description: [
-				"In order to fill your Oxygen Tanks, stand on a Gas Charge Pad with oxygen in its internal storage."
-				""
-				"Suitable Oxygen can be gained by separating water into its components via heated mixing."
-			]
-			dependencies: ["6A156D11D983661D"]
-			id: "3AD7553F3C8593F9"
-			tasks: [
-				{
-					id: "045DB251DB8BB97F"
-					type: "item"
-					item: "advancedrocketry:oxygencharger"
-					consume_items: false
-				}
-				{
-					id: "23140AC17E9BE946"
-					type: "item"
-					item: "advancedrocketry:bucketoxygen"
-					count: 4L
-					consume_items: false
-				}
-			]
-		}
-		{
-			title: "Launch Pad Structure"
-			icon: "advancedrocketry:launchpad"
-			x: 2.0d
-			y: 6.0d
-			shape: "circle"
-			subtitle: "Contraption 49"
-			description: [
-				"The Launch Pad for your Rocket requires special surface materials and reinforcement structures."
-				""
-				"In order to learn about the specific guidelines, locate the ponder scene of the Guidance Computer, or use the command"
-				""
-				"&6/c ponder advancedrocketry:guidancecomputer"
-			]
-			dependencies: ["6A156D11D983661D"]
-			id: "4800892E1E70648D"
-			tasks: [
-				{
-					id: "1F86655043929A18"
-					type: "item"
-					item: "advancedrocketry:launchpad"
-					consume_items: false
-				}
-				{
-					id: "2BC9E126D403902B"
-					type: "item"
-					item: "advancedrocketry:structuretower"
-					consume_items: false
-				}
-				{
-					id: "3D2474BE8BAE28D1"
-					type: "item"
-					item: "advancedrocketry:rocketassembler"
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "6023AC8699FE1451"
-				type: "command"
-				title: "Open Ponder Scene"
-				icon: {
-					id: "occultism:book_of_calling_djinni_manage_machine"
-					Count: 1b
-					tag: {
-						spiritName: "Zedzeraeus"
-					}
-				}
-				team_reward: false
-				command: "/c ponder advancedrocketry:guidancecomputer"
-				player_command: true
-			}]
-		}
-		{
-			title: "Pipeless Loading"
-			icon: "libvulpes:linker"
-			x: 5.0d
-			y: 6.0d
-			shape: "circle"
-			description: ["A couple of additional Gadgets are required in order to load the rocket with fuel. For usages refer to the Ponder Scene of the Guidance Computer."]
-			dependencies: ["6A156D11D983661D"]
-			id: "1AE7B6CA4D1DBA6F"
-			tasks: [
-				{
-					id: "4D0D4FCDA84500F4"
-					type: "item"
-					item: "advancedrocketry:fuelingstation"
-					consume_items: false
-				}
-				{
-					id: "0CA84D5F0130C60E"
-					type: "item"
-					item: "libvulpes:linker"
-					consume_items: false
-				}
-			]
 		}
 		{
 			title: "Operators"
@@ -890,45 +568,6 @@
 					id: "26517C9D1C3D8269"
 					type: "checkmark"
 					title: "Automated"
-				}
-			]
-		}
-		{
-			title: "The Spaceship"
-			icon: "advancedrocketry:fueltank"
-			x: 3.5d
-			y: 6.0d
-			shape: "circle"
-			subtitle: "Contraption &b50"
-			description: [
-				"With the Launch Pad in place, it is time to construct your Spaceship. "
-				""
-				"Give it your best, after all this is the final Contraption you've been working towards. "
-				"&7Though perhaps keep the palette simple- with the state that mod is in, see if you can avoid using any funky special rendered blocks here. Crashing to this now would be devastating."
-			]
-			dependencies: [
-				"6A156D11D983661D"
-				"4800892E1E70648D"
-			]
-			id: "73473DC7269EC5B0"
-			tasks: [
-				{
-					id: "5A1CC7C1BAFFABBC"
-					type: "item"
-					item: "advancedrocketry:rocketmotor"
-					consume_items: false
-				}
-				{
-					id: "303C6C7B357D47D9"
-					type: "item"
-					item: "advancedrocketry:fueltank"
-					consume_items: false
-				}
-				{
-					id: "5140EF835413E2FC"
-					type: "item"
-					item: "advancedrocketry:seat"
-					consume_items: false
 				}
 			]
 		}

@@ -69,7 +69,7 @@
 			tasks: [{
 				id: "4D592B701A2AE0BC"
 				type: "item"
-				item: "appliedenergistics2:certus_crystal_seed"
+				item: "ae2:certus_crystal_seed"
 				consume_items: false
 			}]
 		}
@@ -105,7 +105,7 @@
 		}
 		{
 			title: "Growth Completed"
-			icon: "appliedenergistics2:purified_certus_quartz_crystal"
+			icon: "ae2:certus_quartz_crystal"
 			x: -2.5d
 			y: 8.0d
 			subtitle: "Contraption 12-4"
@@ -116,7 +116,7 @@
 				{
 					id: "68D808533C34AB5C"
 					type: "item"
-					item: "appliedenergistics2:purified_certus_quartz_crystal"
+					item: "ae2:purified_certus_quartz_crystal"
 					consume_items: false
 				}
 				{
@@ -151,7 +151,7 @@
 		}
 		{
 			title: "Skystone Infini-mill"
-			icon: "appliedenergistics2:sky_dust"
+			icon: "ae2:sky_dust"
 			x: -1.0d
 			y: 4.0d
 			subtitle: "Contraption 11"
@@ -167,7 +167,7 @@
 				{
 					id: "69C6513B25BB6ABA"
 					type: "item"
-					item: "appliedenergistics2:sky_dust"
+					item: "ae2:sky_dust"
 					consume_items: false
 				}
 				{
@@ -298,7 +298,7 @@
 		}
 		{
 			title: "The (Re-)Charger"
-			icon: "appliedenergistics2:charged_certus_quartz_crystal"
+			icon: "ae2:charged_certus_quartz_crystal"
 			x: 1.0d
 			y: 6.0d
 			subtitle: "Contraption 14"
@@ -314,7 +314,7 @@
 				{
 					id: "23DAE14596F025DF"
 					type: "item"
-					item: "appliedenergistics2:charged_certus_quartz_crystal"
+					item: "ae2:charged_certus_quartz_crystal"
 					consume_items: false
 				}
 				{
@@ -407,7 +407,7 @@
 				{
 					id: "7A797A069B28AE89"
 					type: "item"
-					item: "appliedenergistics2:certus_quartz_crystal"
+					item: "ae2:certus_quartz_crystal"
 					random_bonus: 4
 				}
 				{
@@ -641,11 +641,18 @@
 		}
 		{
 			title: "Arming the Deployer II"
+			icon: {
+				id: "farmersdelight:flint_knife"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
 			x: -2.5d
 			y: 11.5d
 			shape: "circle"
 			description: [
-				"It'll be good to stock up on a couple of screwdrivers for the Mechanism Assembly."
+				"ProjectRed doesn't have a 1.18.2 port. In a pinch, a knife may work in place of a screwdriver. It'll be good to stock up on a couple of knives for the Mechanism Assembly."
 				"Just like last time, the requirement does not necessarily call for automation."
 			]
 			hide_dependency_lines: true
@@ -655,10 +662,10 @@
 				id: "7DF53EF0CF55B5D7"
 				type: "item"
 				item: {
-					id: "projectred-core:screwdriver"
+					id: "itemfilters:tag"
 					Count: 1b
 					tag: {
-						Damage: 0
+						value: "forge:tools/knives"
 					}
 				}
 				consume_items: false
@@ -666,7 +673,7 @@
 		}
 		{
 			title: "Bonus 2A Complete!"
-			x: -1.0d
+			x: -2.0d
 			y: 19.5d
 			shape: "hexagon"
 			description: ["Fantastic Work! You have mastered the challenges of the nether; you couldn't be more well-prepared for the upcoming Assembly Line."]
@@ -743,6 +750,38 @@
 				item: "create:blaze_burner"
 				consume_items: false
 			}]
+		}
+		{
+			title: "Also... Trains!"
+			x: 0.0d
+			y: 19.5d
+			shape: "hexagon"
+			description: [
+				"You can also use Infernal Mechanisms to construct Locomotive Machines."
+				"The power of Full Steam is now at your fingertips!"
+			]
+			dependencies: ["3C50B4556375178E"]
+			size: 2.0d
+			id: "0CD5955E90B0512B"
+			tasks: [{
+				id: "334D17099154209F"
+				type: "item"
+				item: "kubejs:locomotive_machine"
+				consume_items: false
+			}]
+			rewards: [
+				{
+					id: "47BC707E262F8FEC"
+					type: "item"
+					item: "kubejs:infernal_mechanism"
+					count: 16
+				}
+				{
+					id: "28A02E755B7460A7"
+					type: "item"
+					item: "create:steam_whistle"
+				}
+			]
 		}
 	]
 }

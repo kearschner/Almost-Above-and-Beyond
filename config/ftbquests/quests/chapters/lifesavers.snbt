@@ -42,50 +42,31 @@
 			}]
 		}
 		{
-			title: "Control Centre"
-			icon: "projectred-illumination:red_inverted_fixture_light"
-			x: -4.0d
-			y: 1.0d
-			description: [
-				"With new circuitry and wiring capability, you can make your factory a little smarter. Also those lamps you can make are really pretty."
-				""
-				"For an actual piece of advice: it is pretty simple to set up a little circuit at a few points in your factory, which detect when an item has not been produced in a while. You can use redstone links to redirect those signals to a central control room, giving you an overview of which sections require maintenance."
-				""
-				"The circuit on site is basically a tug of war between a slow timer and a content observer detecting the items. The Counter available from circuit stonecutting works perfectly for this."
-			]
-			id: "1127129CBA2B5E6F"
+			title: "The other Gamemode"
+			icon: "magicfeather:magicfeather"
+			x: 3.0d
+			y: 3.0d
+			description: ["Magic Feathers grant flight to the weilder, albeit only within the range of a Beacon Beam. Still, this should be of great help in setting up big factories!"]
+			id: "0F4B0608CBF966E6"
 			tasks: [
 				{
-					id: "19CF5DA7A8547E17"
+					id: "18A86C2CE288A35A"
 					type: "item"
-					item: "projectred-core:platformed_plate"
+					item: "magicfeather:magicfeather"
 					consume_items: false
 				}
 				{
-					id: "457F0290A225EEA9"
+					id: "6D2E7DBD75292896"
 					type: "item"
-					item: "projectred-transmission:red_alloy_wire"
-					consume_items: false
-				}
-				{
-					id: "17B93B8634BC1C2D"
-					type: "item"
-					title: "Any Illumar Dust"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "projectred-core:illumars"
-						}
-					}
+					item: "minecraft:beacon"
 					consume_items: false
 				}
 			]
 			rewards: [{
-				id: "66E867F9537437F1"
+				id: "3E31A943AAC038E9"
 				type: "item"
-				item: "projectred-core:red_ingot"
-				random_bonus: 4
+				item: "minecraft:iron_block"
+				count: 9
 			}]
 		}
 		{
@@ -113,35 +94,6 @@
 				type: "item"
 				item: "create:golden_sheet"
 			}]
-		}
-		{
-			title: "Immersive Minimap"
-			x: -6.0d
-			y: -3.0d
-			description: [
-				"A cute alternative to the all-powerful map hud is the atlas."
-				""
-				"Aside from the fantastic feel and design; these atlases can be copied and handed to your friends. If one of the owners explores new Territory or places a marker, everyone else will see it too."
-			]
-			id: "0B8816319F81C12A"
-			tasks: [{
-				id: "180D1CB1BB7EB0AA"
-				type: "item"
-				item: "antiqueatlas:empty_antique_atlas"
-				consume_items: false
-			}]
-			rewards: [
-				{
-					id: "2F5DF773BBBA2725"
-					type: "item"
-					item: "minecraft:map"
-				}
-				{
-					id: "4958596378CDE1F3"
-					type: "item"
-					item: "minecraft:item_frame"
-				}
-			]
 		}
 		{
 			title: "Big Barrels II"
@@ -185,270 +137,6 @@
 				id: "02BA7C4E293DD955"
 				type: "item"
 				item: "minecraft:salmon"
-			}]
-		}
-		{
-			title: "Hotswap replace"
-			x: -3.0d
-			y: -1.0d
-			description: ["Exchangers make for a nice tool to replace blocks with others. Saves you a lot of digging."]
-			id: "6D7D504E9DC22590"
-			tasks: [{
-				id: "4BE0CCD6F383D961"
-				type: "item"
-				title: "Any Exchanger"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "exchangers:end_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:leadstone_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:hardened_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:reinforced_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:signalum_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:resonant_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:tuberous_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:creative_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:wooden_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:stone_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:golden_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:iron_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:diamond_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-							{
-								id: "exchangers:emerald_exchanger"
-								Count: 1b
-								tag: {
-									mode: 0
-									fuzzyPlacementChance: 100
-									directionalPlacement: 0b
-									forceDropItems: 0b
-									fuzzyPlacement: 0b
-									voidItems: 0b
-									range: 0
-									Damage: 0
-									blockstate: {
-										Name: "minecraft:air"
-									}
-								}
-							}
-						]
-					}
-				}
-				consume_items: false
-			}]
-			rewards: [{
-				id: "12B2F2F9A6A257FE"
-				type: "item"
-				item: "forbidden_arcanus:ender_pearl_fragment"
 			}]
 		}
 		{
@@ -557,49 +245,6 @@
 			}]
 		}
 		{
-			title: "Big Barrels"
-			x: -1.0d
-			y: 3.0d
-			description: ["In case you need large universal storage space in a block, check out the upgrade options for wooden barrels."]
-			id: "50E2D6459F3D68C0"
-			tasks: [{
-				id: "6D6CDA4DEFD5795F"
-				type: "item"
-				title: "Any Upgraded Barrel"
-				item: {
-					id: "itemfilters:or"
-					Count: 1b
-					tag: {
-						items: [
-							{
-								id: "metalbarrels:gold_barrel"
-								Count: 1b
-							}
-							{
-								id: "metalbarrels:iron_barrel"
-								Count: 1b
-							}
-							{
-								id: "metalbarrels:silver_barrel"
-								Count: 1b
-							}
-							{
-								id: "metalbarrels:copper_barrel"
-								Count: 1b
-							}
-						]
-					}
-				}
-				consume_items: false
-			}]
-			rewards: [{
-				id: "390AF1049C411219"
-				type: "item"
-				item: "minecraft:barrel"
-				random_bonus: 4
-			}]
-		}
-		{
 			title: "House Building Cannon"
 			x: 1.0d
 			y: -1.0d
@@ -685,25 +330,6 @@
 			}]
 		}
 		{
-			title: "Bottoms up!"
-			x: -7.0d
-			y: -1.0d
-			description: ["You can use a Keg to create your favourite brews. Drink Responsibly."]
-			id: "7D63FF6A2243A06B"
-			tasks: [{
-				id: "3AD6B6675D0D19D0"
-				type: "item"
-				item: "drinkbeer:beer_mug"
-				consume_items: false
-			}]
-			rewards: [{
-				id: "43B1D0036D231078"
-				type: "item"
-				item: "minecraft:wheat"
-				random_bonus: 4
-			}]
-		}
-		{
 			title: "Friend?"
 			x: 1.0d
 			y: -5.0d
@@ -754,34 +380,6 @@
 				id: "3D69B03DFCB41179"
 				type: "item"
 				item: "randomium:randomium_ore"
-			}]
-		}
-		{
-			title: "The other Gamemode"
-			icon: "magicfeather:magicfeather"
-			x: 3.0d
-			y: 3.0d
-			description: ["Magic Feathers grant flight to the weilder, albeit only within the range of a Beacon Beam. Still, this should be of great help in setting up big factories!"]
-			id: "0F4B0608CBF966E6"
-			tasks: [
-				{
-					id: "18A86C2CE288A35A"
-					type: "item"
-					item: "magicfeather:magicfeather"
-					consume_items: false
-				}
-				{
-					id: "6D2E7DBD75292896"
-					type: "item"
-					item: "minecraft:beacon"
-					consume_items: false
-				}
-			]
-			rewards: [{
-				id: "3E31A943AAC038E9"
-				type: "item"
-				item: "minecraft:iron_block"
-				count: 9
 			}]
 		}
 	]

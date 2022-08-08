@@ -146,7 +146,7 @@
 			tasks: [{
 				id: "6F2432F797A27549"
 				type: "item"
-				item: "kubejs:substrate_gabbro"
+				item: "kubejs:substrate_tuff"
 				consume_items: false
 			}]
 		}
@@ -748,10 +748,9 @@
 		}
 		{
 			title: "The Alchemical Laser"
-			icon: "projectred-illumination:lime_inverted_cage_light"
+			icon: "kubejs:alchemical_laser"
 			x: 3.75d
 			y: 2.0d
-			shape: "circle"
 			description: [
 				"A central role in your Laboratory is played by the Alchemical Laser."
 				""

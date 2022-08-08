@@ -1,6 +1,6 @@
 
 
-events.listen('ftbquests.custom_reward', function (event) {
+onEvent('ftbquests.custom_reward', event => {
     let reward = event.getReward()
     let id = reward.quest.getCodeString()
 

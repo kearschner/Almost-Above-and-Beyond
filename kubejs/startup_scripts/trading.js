@@ -2,7 +2,7 @@
 
 // Mod shortcuts
 let MOD = (domain, id, x) => (x ? `${x}x ` : "") + (id.startsWith('#') ? '#' : "") + domain + ":" + id.replace('#', '')
-let AE2 = (id, x) => MOD("appliedenergistics2", id, x)
+let AE2 = (id, x) => MOD("ae2", id, x)
 let TE = (id, x) => MOD("thermal", id, x)
 let AP = (id, x) => MOD("architects_palette", id, x)
 let LV = (id, x) => MOD("libvulpes", id, x)
@@ -14,7 +14,7 @@ let EG = (id, x) => MOD("endergetic", id, x)
 let FD = (id, x) => MOD("farmersdelight", id, x)
 let BOP = (id, x) => MOD("biomesoplenty", id, x)
 let PR_C = (id, x) => MOD("projectred-core", id, x)
-let RQ = (id, x) => MOD("xreliquary", id, x)
+let RQ = (id, x) => MOD("reliquary", id, x)
 let SD = (id, x) => MOD("storagedrawers", id, x)
 let SP = (id, x) => MOD("supplementaries", id, x)
 let F = (id, x) => MOD("forge", id, x)
@@ -117,9 +117,6 @@ onEvent('item.registry', event => {
 		{ in: MC('diorite', 64), out: S(1) },
 		{ in: MC('sandstone', 64), out: S(1) },
 		{ in: CR('limestone', 64), out: S(1) },
-		{ in: CR('gabbro', 64), out: S(1) },
-		{ in: CR('weathered_limestone', 64), out: S(2) },
-		{ in: CR('dolomite', 64), out: S(2) },
 		{ in: TE('cinnabar', 8), out: S(6) },
 		{ in: TE('sulfur', 16), out: S(6) },
 		{ in: TE('niter', 16), out: S(6) },
@@ -129,7 +126,10 @@ onEvent('item.registry', event => {
 		{ in: TE('ruby', 1), out: S(10) },
 		{ in: MC('diamond', 1), out: S(14) },
 		{ in: MC('coal', 16), out: S(2) },
-		{ in: "16x advancedrocketry:moonturf", out: S(2) }
+		//{ in: CR('gabbro', 64), out: S(1) },
+		//{ in: CR('weathered_limestone', 64), out: S(2) },
+		//{ in: CR('dolomite', 64), out: S(2) },
+		//{ in: "16x advancedrocketry:moonturf", out: S(2) }
 	])
 
 	profession("Masonry", 0x5E6F64, 0xBA7967, [
@@ -276,9 +276,8 @@ onEvent('item.registry', event => {
 		{ in: MC('iron_boots'), out: S(2) },
 		{ in: MC('iron_leggings'), out: S(4) },
 		{ in: MC('iron_chestplate'), out: S(4) },
-		{ in: TC('blank_cast'), out: S(1) },
 		{ in: TC('ingot_cast'), out: S(2) },
-		{ in: TC('pickaxe_head_cast'), out: S(3) },
+		{ in: TC('pick_head_cast'), out: S(3) },
 		{ in: TC('gem_cast'), out: S(4) },
 		{ in: MC('iron_helmet'), out: S(3) },
 		{ in: MC('golden_boots'), out: S(4) },
@@ -288,8 +287,9 @@ onEvent('item.registry', event => {
 		{ in: MC('golden_apple'), out: S(10) },
 		{ in: MC('arrow', 32), out: S(3) },
 		{ in: MC('iron_sword'), out: S(1) },
-		{ in: TC('#modifiable/two_handed'), out: S(1) },
-		{ in: MC('golden_sword'), out: S(2) }
+		{ in: MC('golden_sword'), out: S(2) },
+		//{ in: TC('blank__cast'), out: S(1) }
+		//{ in: TC('#modifiable/two_handed'), out: S(1) },
 	])
 
 	trade("Exchange Currencies", 0xEBA83A, 0xF4F4F4, [
@@ -393,11 +393,11 @@ onEvent('item.registry', event => {
 		simple("Diorite", MC('diorite', 16), 3, S, 0x7F7F7F, 0xD4D4D4)
 		simple("Andesite", MC('andesite', 16), 3, S, 0x5F5F5F, 0x8E8E8E)
 		simple("Limestone", CR('limestone', 16), 3, S, 0xA7A89E, 0xC0C2BA)
-		simple("Weathered Limestone", CR('weathered_limestone', 16), 3, S, 0x5E6055, 0x797E74)
-		simple("Dolomite", CR('dolomite', 16), 3, S, 0xC2C2C2, 0xDADADA)
-		simple("Gabbro", CR('gabbro', 16), 3, S, 0x6B5D4F, 0x7D6B5A)
+		//simple("Weathered Limestone", CR('weathered_limestone', 16), 3, S, 0x5E6055, 0x797E74)
+		//simple("Dolomite", CR('dolomite', 16), 3, S, 0xC2C2C2, 0xDADADA)
+		//simple("Gabbro", CR('gabbro', 16), 3, S, 0x6B5D4F, 0x7D6B5A)
 		simple("Scoria", CR('scoria', 16), 3, S, 0x2A130C, 0x553427)
-		simple("Dark Scoria", CR('dark_scoria', 16), 3, S, 0x0D0706, 0x23201A)
+		//simple("Dark Scoria", CR('dark_scoria', 16), 3, S, 0x0D0706, 0x23201A)
 		simple("Obsidian", MC('obsidian', 1), 8, S, 0x05030A, 0x36234C)
 		
 		next_group()
@@ -416,7 +416,7 @@ onEvent('item.registry', event => {
 		entry_cost = 10
 		simple("Iron Ingot", MC('iron_ingot', 8), 16, S, 0xA6A6A6, 0xD5D5D5)
 		simple("Zinc Ingot", CR('zinc_ingot', 8), 16, S, 0x616A60, 0xD0D2C5)
-		simple("Copper Ingot", CR('copper_ingot', 8), 16, S, 0xDD7E5D, 0xFCEFBA)
+		simple("Copper Ingot", MC('copper_ingot', 8), 16, S, 0xDD7E5D, 0xFCEFBA)
 		simple("Nickel Ingot", TE('nickel_ingot', 8), 32, S, 0x977756, 0xE4D196)
 		simple("Lead Ingot", TE('lead_ingot', 8), 32, S, 0x232456, 0x7C95A4)
 		simple("Gold Ingot", MC('gold_ingot', 8), 48, S, 0xD99413, 0xFAF25E)
@@ -459,7 +459,7 @@ onEvent('item.registry', event => {
 		simple("Bramble", BOP('bramble', 4), 9, S, 0x8C3122, 0xECCDBC)
 		simple("Barley", BOP('barley', 4), 4, S, 0xB78B44, 0xD8BC64)
 		simple("Watergrass", BOP('watergrass', 4), 4, S, 0x43763D, 0x538B51)
-		simple("Mangrove Root", BOP('mangrove_root', 4), 9, S, 0x795740, 0xB8AB88)
+		//simple("Mangrove Root", BOP('mangrove_root', 4), 9, S, 0x795740, 0xB8AB88)
 		simple("Reed", BOP('reed', 4), 5, S, 0x7B4E35, 0xB2855C)
 		simple("Clover Petal", BOP('huge_clover_petal', 4), 10, S, 0x5B8A4F, 0x6FA960)
 		simple("Spanish Moss", BOP('spanish_moss', 4), 7, S, 0x395B2A, 0xA2C790)
@@ -476,19 +476,19 @@ onEvent('item.registry', event => {
 		entry_cost = 10
 		simple("Daub", SP('daub', 16), 5, S, 0xBFBAAA, 0xCBC8B6)
 		simple("Clear Glass", TC('clear_glass', 16), 4, S, 0xA9C3CF, 0xE8E8E8)
-		simple("Factory Block", "16x chisel:factory/dots", 2, S, 0x211C10, 0x604B43)
-		simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, S, 0x71706E, 0x9D9A98)
+		//simple("Factory Block", "16x chisel:factory/dots", 2, S, 0x211C10, 0x604B43)
+		//simple("Laboratory Block", "16x chisel:laboratory/wallpanel", 4, S, 0x71706E, 0x9D9A98)
 		simple("Copper Shingles", CR('copper_shingles', 16), 3, S, 0xB5654B, 0xE4BB79)
 		simple("Algal Bricks", AP('algal_bricks', 32), 6, S, 0x292926, 0x3D4D48)
 		simple("Olivestone Bricks", AP('olivestone_bricks', 32), 8, S, 0x3A3C2E, 0x57553E)
-		simple("Architect's Limestone", AP('limestone', 32), 8, S, 0x756958, 0x7F7360)
+		//simple("Architect's Limestone", AP('limestone', 32), 8, S, 0x756958, 0x7F7360)
 		simple("Sunmetal", AP('sunmetal_block', 32), 8, S, 0x603E38, 0xB48764)
 		simple("Plating Block", AP('plating_block', 32), 8, S, 0x222225, 0x39383C)
 		simple("Twisted Planks", AP('twisted_planks', 32), 8, S, 0x5E5259, 0x72616B)
 		simple("Osseous Bricks", AP('osseous_bricks', 32), 8, S, 0x9D976F, 0xD3D0BF)
 		simple("Seared Stone", TC('seared_stone', 16), 32, S, 0x393734, 0x59534F)
 		simple("Scorched Stone", TC('scorched_stone', 16), 32, S, 0x382C25, 0x4C3F37)
-		
+	
 		simple("Lantern", MC('lantern', 1), 1, S, 0x484F64, 0xF6C765)
 		simple("Copper Lantern", SP('copper_lantern', 1), 1, S, 0xB36535, 0xF3B154)
 		simple("Brass Lantern", SP('brass_lantern', 1), 1, S, 0xA47C37, 0xFAEACF)

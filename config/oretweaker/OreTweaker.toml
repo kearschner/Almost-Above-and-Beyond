@@ -5,10 +5,14 @@
 	debug = false
 
 [TEMPLATES]
-	#Attempts to regenerate template files if not present
+	#Attempts to generate default templates if not present
 	generate_templates = false
-
-[DATA]
-	#Attempts to regenerate default data files if not present
+	#Attempts to generate default settings if not present
 	generate_default_settings = false
+
+[GENERATOR]
+	#Disables large veins from generating
+	disable_large_veins = false
+	#Attempts to auto generate deepslate variants if present
+	auto_generate_deepslate_variants = true
 

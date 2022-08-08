@@ -12,7 +12,7 @@
 			title: "Build-a-Processing:"
 			icon: "minecraft:gold_ore"
 			x: -9.0d
-			y: -4.0d
+			y: -6.0d
 			shape: "circle"
 			description: [
 				"A simple Overview of most options to process your way from Ore to Ingot."
@@ -34,8 +34,8 @@
 					Damage: 0
 				}
 			}
-			x: -7.0d
-			y: -3.0d
+			x: -11.0d
+			y: -5.0d
 			subtitle: "1 to 1"
 			dependencies: ["6B03056FA21424C0"]
 			id: "7967324CAC77AF60"
@@ -50,10 +50,7 @@
 			x: -9.0d
 			y: -2.0d
 			shape: "circle"
-			dependencies: [
-				"7967324CAC77AF60"
-				"005F2C4E203E7E62"
-			]
+			dependencies: ["580F58F7B459DCD8"]
 			dependency_requirement: "one_completed"
 			id: "612100C7C6E0A7C9"
 			tasks: [{
@@ -74,8 +71,8 @@
 					}]
 				}
 			}
-			x: -5.0d
-			y: -3.0d
+			x: -7.0d
+			y: -5.0d
 			subtitle: "1 to 1-2"
 			dependencies: ["6B03056FA21424C0"]
 			id: "005F2C4E203E7E62"
@@ -256,6 +253,8 @@
 				"1A5A81CA749DAB2A"
 				"1250AE58911C27A9"
 				"746F9F4F21D8400D"
+				"5363AC6B6E6EEC1F"
+				"6A2C6D75EEDBF751"
 			]
 			dependency_requirement: "one_completed"
 			id: "2BE033F631A778D9"
@@ -327,6 +326,62 @@
 			tasks: [{
 				id: "6EBC75DD42F7BB3E"
 				type: "checkmark"
+			}]
+		}
+		{
+			icon: "minecraft:raw_gold"
+			x: -9.0d
+			y: -4.0d
+			shape: "circle"
+			dependencies: [
+				"7967324CAC77AF60"
+				"005F2C4E203E7E62"
+			]
+			id: "081D9128AD92664E"
+			tasks: [{
+				id: "4604CDACD1960587"
+				type: "checkmark"
+				title: "Raw"
+			}]
+		}
+		{
+			icon: "thermal:machine_smelter"
+			x: -16.0d
+			y: -3.0d
+			subtitle: "1 to 1-2"
+			dependencies: ["081D9128AD92664E"]
+			id: "5363AC6B6E6EEC1F"
+			tasks: [{
+				id: "5F83C80642F0F0AA"
+				type: "checkmark"
+				title: "Raw Induction Smelting"
+			}]
+		}
+		{
+			icon: "minecraft:furnace"
+			x: -13.0d
+			y: -3.0d
+			subtitle: "1 to 1"
+			dependencies: ["081D9128AD92664E"]
+			id: "6A2C6D75EEDBF751"
+			tasks: [{
+				id: "5E2B0731425C664C"
+				type: "checkmark"
+				title: "Raw Smelting"
+			}]
+		}
+		{
+			icon: "create:crushing_wheel"
+			x: -7.0d
+			y: -3.0d
+			subtitle: "1 to 1"
+			description: ["1 to 1"]
+			dependencies: ["081D9128AD92664E"]
+			id: "580F58F7B459DCD8"
+			tasks: [{
+				id: "6AC7EEBA1E42D6BD"
+				type: "checkmark"
+				title: "Raw Crushing"
 			}]
 		}
 	]

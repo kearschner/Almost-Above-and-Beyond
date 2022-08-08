@@ -153,6 +153,8 @@
 			description: [
 				"Zinc Machines are incredibly powerful. From efficient Cobblestone Harvesters to long-ranged Item Collectors, a useful new suite of equipment now sits at the ready."
 				""
+				"You can also now use Infernal Mechanisms to construct Locomotive Machines. Full steam ahead!"
+				""
 				"Note that Infernal Mechanisms are an ingredient to nothing else. The main assembly line will continue with Precision Mechanisms."
 			]
 			dependencies: [
@@ -222,8 +224,8 @@
 			}]
 		}
 		{
-			title: "..to a Spacefarer"
-			icon: "advancedrocketry:moonturf"
+			title: "..to an ugh..."
+			icon: "kubejs:computation_matrix"
 			x: 2.5d
 			y: 0.0d
 			shape: "hexagon"
@@ -232,10 +234,7 @@
 				""
 				"With that, the role of this Factory Guide has been fulfilled. Enjoy building up your new Hi-Tech Empire, and we'll see you in the next modpack!"
 			]
-			dependencies: [
-				"5E62059675895213"
-				"47965C310D9847DC"
-			]
+			dependencies: ["5E62059675895213"]
 			size: 2.0d
 			id: "4F7A70041B67A348"
 			tasks: [
@@ -243,7 +242,7 @@
 					id: "058AEB3EF218C7D2"
 					type: "stat"
 					title: "Complete Chapter 5"
-					icon: "advancedrocketry:guidancecomputer"
+					icon: "kubejs:computation_matrix"
 					disable_toast: true
 					stat: "minecraft:play_one_minute"
 					value: 1
