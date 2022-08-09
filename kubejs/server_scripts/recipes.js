@@ -1786,7 +1786,7 @@ function brassMachine(event) {
 	], KJ('kinetic_mechanism'), [
 		event.recipes.createDeploying(t, [t, CR('electron_tube')]),
 		event.recipes.createDeploying(t, [t, CR('electron_tube')]),
-		event.recipes.createDeploying(t, [t, F('#tools/knives')])
+		event.recipes.createDeploying(t, [t, F('#tools/screwdriver')])
 	]).transitionalItem(t)
 		.loops(1)
 		.id('kubejs:precision_mechanism')

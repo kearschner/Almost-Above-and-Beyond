@@ -237,23 +237,15 @@
 			dependencies: ["5E62059675895213"]
 			size: 2.0d
 			id: "4F7A70041B67A348"
-			tasks: [
-				{
-					id: "058AEB3EF218C7D2"
-					type: "stat"
-					title: "Complete Chapter 5"
-					icon: "kubejs:computation_matrix"
-					disable_toast: true
-					stat: "minecraft:play_one_minute"
-					value: 1
-				}
-				{
-					id: "68543E92A6B517DC"
-					type: "item"
-					item: "advancedrocketry:moonturf"
-					consume_items: false
-				}
-			]
+			tasks: [{
+				id: "058AEB3EF218C7D2"
+				type: "stat"
+				title: "Complete Chapter 5"
+				icon: "kubejs:computation_matrix"
+				disable_toast: true
+				stat: "minecraft:play_one_minute"
+				value: 1
+			}]
 		}
 		{
 			title: "High Aspirations"

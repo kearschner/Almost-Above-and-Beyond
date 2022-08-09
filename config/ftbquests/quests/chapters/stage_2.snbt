@@ -642,7 +642,7 @@
 		{
 			title: "Arming the Deployer II"
 			icon: {
-				id: "farmersdelight:flint_knife"
+				id: "supercircuitmaker:screwdriver"
 				Count: 1b
 				tag: {
 					Damage: 0
@@ -652,7 +652,8 @@
 			y: 11.5d
 			shape: "circle"
 			description: [
-				"ProjectRed doesn't have a 1.18.2 port. In a pinch, a knife may work in place of a screwdriver. It'll be good to stock up on a couple of knives for the Mechanism Assembly."
+				"ProjectRed doesn't have a 1.18.2 port yet, fotunatly SuperCircuitMaker also has a screwdriver!"
+				""
 				"Just like last time, the requirement does not necessarily call for automation."
 			]
 			hide_dependency_lines: true

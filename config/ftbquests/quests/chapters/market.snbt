@@ -76,7 +76,11 @@
 			x: -8.5d
 			y: -6.5d
 			subtitle: "5 Gold"
-			description: ["Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."]
+			description: [
+				"Buy this relic to minimise the Tool Maintenance in the assembly of &6Kinetic Mechanisms&r."
+				""
+				"Please don't use this to cut trees I couldn't figure out a better alternative to the CBMultiblock saw."
+			]
 			hide_dependency_lines: true
 			id: "4F953BACF4D1C151"
 			tasks: [
@@ -125,14 +129,18 @@
 		{
 			title: "Never Screwed"
 			icon: {
-				id: "projectred-core:screwdriver"
+				id: "supercircuitmaker:screwdriver"
 				Count: 1b
 				tag: {
+					RepairCost: 0
 					Damage: 0
 					Enchantments: [{
 						lvl: 3s
 						id: "minecraft:unbreaking"
 					}]
+					display: {
+						Name: "{\"text\":\"Enchanted Screwdriver\"}"
+					}
 				}
 			}
 			x: -7.0d
@@ -145,7 +153,7 @@
 					id: "1E25EB2883C9A960"
 					type: "item"
 					item: {
-						id: "projectred-core:screwdriver"
+						id: "supercircuitmaker:screwdriver"
 						Count: 1b
 						tag: {
 							Damage: 0
@@ -164,7 +172,7 @@
 				id: "743730BBE32A0875"
 				type: "item"
 				item: {
-					id: "projectred-core:screwdriver"
+					id: "supercircuitmaker:screwdriver"
 					Count: 1b
 					tag: {
 						Unbreakable: 1

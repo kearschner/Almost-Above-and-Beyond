@@ -38,7 +38,7 @@
 			title: "Solving Trajectories"
 			x: 2.0d
 			y: 9.5d
-			shape: "circle"
+			shape: "hexagon"
 			subtitle: "Contraption 45"
 			description: [
 				"For the calculations of the Guidance computer, we will need.. a lot of these Digits."
@@ -62,6 +62,7 @@
 				"2441491CB5D5E57D"
 			]
 			dependency_requirement: "one_completed"
+			size: 2.0d
 			id: "69311E02A8B3451D"
 			tasks: [{
 				id: "2C98415D43457049"
